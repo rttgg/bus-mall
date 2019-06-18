@@ -1,74 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bus-Mall</title>
-    <link rel ="stylesheet" href="./style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul id="my-nav">
-                <li>Home</li>
-                <li>Products</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <selection id="list-of-images">
-                <h2>Title of the photos</h2>
-            <ul id="images">
-                <li>bag: 0 votes</li>
-                <li>banana: 0 votes</li>
-                <li>bathroom: 0 votes</li>
-                <li>boots: 0 votes</li>
-                <li>breakfast: 0 votes</li>
-                <li>bubblegum: 0 votes</li>
-                <li>chair: 0 votes</li>
-                <li>cthulhu: 0 votes</li>
-                <li>dog-duck: 0 votes</li>
-                <li>dragon: 0 votes</li>
-                <li>pen: 0 votes</li>
-                <li>pet-sweep: 0 votes</li>
-                <li>scissors: 0 votes</li>
-                <li>shark: 0 votes</li>
-                <li>sweep: 0 votes</li>
-                <li>tauntaun: 0 votes</li>
-                <li>unicorn: 0 votes</li>
-                <li>usb: 0 votes</li>
-                <li>water-can: 0 votes</li>
-                <li>wine-glass: 0 votes</li>
-
-            </ul>
-        </selection>
-        <selection id="photos-for-vote">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Bus-Mall</title>
+        <link rel="stylesheet" href="./reset.css">
+        <link rel ="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1>BusMall</h1>
+        <header>
+            <nav>
+                <ul id="my-nav">
+                    <li>Home</li>
+                    <li>Products</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="allProducts">
+            <div id ="left">
+            <img id="left_photo_img">
+            </div>
+            <div id ="middle">
+            <img id="middle_photo_img">
+            </div>
+            <div id ="right">
+            <img id="right_photo_img">
+            </div>
+        </section>
+            <section id="results"></section>
             
-            <div id="my-bag">
-                <img id="my-bag-img" src="./img/bag.jpg" alt="bag">
-                <p id= first-photo>Bags</p>
+            </selection>
+        </main>
+        <footer>
+            <div>
+                <p>This will be a footer</p>
             </div>
-            <div id="my-banana">
-                <img id="my-banana-img" src="./img/banana.jpg" alt="banana">
-                <p id= middle-photo>Banana</p>
-            </div>
-            <div id="my-bathroom">
-                <img id="my-bathroom-img" src="./img/bathroom.jpg" alt="bathroom">
-                <p id= last-photo>Bathroom</p>
-            </div>
-
-        </selection>
-    </main>
-    <footer>
-        <div>
-            <p>This will be a footer</p>
-        </div>
-    </footer>
-    <script src="./app.js"></script>
-</body>
-</html>
+        </footer>
+        <script src="./app.js"></script>
+    </body>
+    </html>
 
 
