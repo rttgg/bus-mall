@@ -1,17 +1,15 @@
 * {
     box-sizing: border-box;
-
- }
+}
  
  body {
      background: radial-gradient ( blue, black ) fixed;
- }
+}
 
  header {
      background: brown;
      width: 100;   
 }
-
 
 nav {
     max-width: 900px;
@@ -30,22 +28,10 @@ main {
     max-width: 900px;
     margin: 0 auto;
     overflow: hidden;
-
 }
-
 main > *{
     float: left;
-
 }
-
-/* img {
-    max-height: 200px;
-    max-width: 100%;
-    margin: 0 auto;
-    float: right;
-    width: 33.33%;
-    padding: 5px;
-} */
 #left_photo_img{
     margin-left: 10px;
     margin-right: 20px;
@@ -66,8 +52,6 @@ main > *{
     margin-bottom: 0.5em;
     text-align: center;
 }
-
-
 #my-nav > li{
     display: inline-block;
     list-style: none;
@@ -90,8 +74,6 @@ section div {
     float: left;
     width: 50%
 }
-
-
 section#results {
     width: 660px;
     margin: auto;

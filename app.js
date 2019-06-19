@@ -6,7 +6,7 @@ var leftPhotoImageTag = document.getElementById('left_photo_img');
 var middlePhotoImageTag = document.getElementById('middle_photo_img');
 var rightPhotoImageTag = document.getElementById('right_photo_img');
 var productsContainer = document.getElementById('allProducts');
-var clickContainer = document.getElementById('results');
+var clickContainer = document.getElementById('results');//used on other file
 
 //this variable also globals which let how many times is clicked and default count when we open the page
 var clickCount = 0;
@@ -70,9 +70,7 @@ var renderNewPhoto = function() {
   var currentPicks = [];
   var leftProduct = pickUniqueNonReporting(currentPicks);
   currentPicks.push(leftProduct);
-  //console.log(leftProduct);
   var middleProduct = pickUniqueNonReporting(currentPicks);
-  //console.log(middleProduct);
   currentPicks.push(middleProduct);
   var rightProduct = pickUniqueNonReporting(currentPicks);
   currentPicks.push(rightProduct);
@@ -90,7 +88,7 @@ var handleClickOnPhoto = function(event){
   if(event.target.id === 'left_photo_img'){
     PhotoPicture.previousImages[0].timesClicked++;
   }
-  if (event.target.id  === 'middle_photo_img'){
+  if (event.target.id === 'middle_photo_img'){
     PhotoPicture.previousImages[1].timesClicked++;
   }
   if (event.target.id === 'right_photo_img'){
@@ -132,7 +130,6 @@ function makeBusChart(){
     var p = Math.floor((PhotoPicture.allImages[i].timesClicked / PhotoPicture.allImages[i].timesShown) *100);
     names.push(PhotoPicture.allImages[i].name);
     percents.push(p);
-   
   }
   var chartData = {
     labels: names,
@@ -182,7 +179,6 @@ function makeBusChart(){
         'rgba(255, 0, 0, 0.3)',
         'rgba(0, 255, 0, 0.3)',
         'rgba(0, 0, 255, 0.3)'
-        
       ],
       borderWidth: 1
     }]
@@ -202,5 +198,5 @@ function makeBusChart(){
     }
   };
 
-  var busChart = new Chart(busChartCanvas, busChartObject);
+  var busChart = new Chart(busChartCanvas, busChartObject); //used on other file
 }
