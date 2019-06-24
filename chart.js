@@ -9,7 +9,6 @@ function makeBusChart(){ //used in other file
     percents.push(p);
     var colorClicks = percents;
     localStorage.setItem('savedClicks', JSON.stringify(colorClicks));
-  
   }
   var chartData = {
     labels: names,
@@ -59,7 +58,7 @@ function makeBusChart(){ //used in other file
         'rgba(255, 0, 0, 0.3)',
         'rgba(0, 255, 0, 0.3)',
         'rgba(0, 0, 255, 0.3)'
-              
+
       ],
       borderWidth: 1
     }]
@@ -67,7 +66,6 @@ function makeBusChart(){ //used in other file
   var busChartObject = {
     type : 'bar',
     data : chartData,
-      
     options: {
       scales: {
         yAxes: [{
@@ -78,7 +76,5 @@ function makeBusChart(){ //used in other file
       }
     }
   };
-      
-  var busChart = new Chart(busChartCanvas, busChartObject);
+  var busChart = new Chart(busChartCanvas, busChartObject);//used in other file
 }
-  
